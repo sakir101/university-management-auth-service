@@ -1,8 +1,7 @@
 import httpStatus from "http-status";
 import ApiError from "../../../errors/ApiError";
 import { User } from "../users/user.model";
-import bcrypt from 'bcrypt'
-import jwt, { Secret } from "jsonwebtoken";
+import { Secret } from "jsonwebtoken";
 import { ILoginUser, ILoginUserResponse, IRefreshTokenResponse } from "./auth.interface";
 import config from "../../../config";
 import { jwtHelpers } from "../../../helpers/jwtHelper";
